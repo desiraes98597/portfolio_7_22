@@ -160,6 +160,9 @@ h6, .h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  text-align: left;
 }
 
 abbr[title],
@@ -1191,7 +1194,13 @@ progress {
 
   .col-md-6 {
     flex: 0 0 auto;
-    width: 50%;
+    // width: 50%;
+    width: 33.33333333%;
+    margin-bottom: 2rem;
+    min-height: 450px;
+    border: solid $purple 1px;
+    border-radius: 25px;
+    background-color: whitesmoke;
   }
 
   .col-md-7 {
@@ -1223,6 +1232,7 @@ progress {
     color:$amzn-dark;
     text-align:left;
     padding-bottom:1rem;
+    margin-left: 1rem;
    
      
     }
@@ -1415,6 +1425,14 @@ progress {
   .col-lg-4 {
     flex: 0 0 auto;
     width: 33.33333333%;
+    // width: 40%;
+  }
+  .col-lg-4 p {
+     margin-top: 0;
+      margin-bottom: 1rem;
+      margin-right: 1rem;
+      margin-left: 0;
+  
   }
 
   .col-lg-5 {
@@ -7304,6 +7322,8 @@ textarea.form-control-lg {
 .mx-auto {
   margin-right: auto !important;
   margin-left: auto !important;
+  margin-top: 10px;
+  
 }
 
 .my-0 {
@@ -7422,7 +7442,8 @@ textarea.form-control-lg {
   // border: 3px solid $teal;
   // border-radius:25px;
   background-color:$white;
-  border-radius:25px;
+  // border-radius:25px;
+  margin-left:1rem;
 
 }
 
@@ -7456,6 +7477,7 @@ textarea.form-control-lg {
 
 .ms-auto {
   margin-left: auto !important;
+  margin-right:15rem;
 }
 
 .p-0 {
@@ -11340,7 +11362,10 @@ html {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+  padding-left: 0;
+  padding-right: 0;
 }
 .page-section .page-section-heading {
   font-size: 2.25rem;
@@ -11530,8 +11555,23 @@ box-shadow: 10px 10px 15px $purple;
   .masthead .masthead-subheading {
     font-size: 1.5rem;
   }
+ 
 }
 
+@media (max-width: 280px){
+  .masthead {
+    padding-top: calc(6rem + 104px);
+    padding-bottom: 6rem;
+    margin-left:0;
+    margin-right:0;
+  }
+.masthead .masthead-avatar {
+  width: 15rem;
+}
+.mb-5 {
+  margin-left:20px;
+}
+}
 
 .portfolio .portfolio-item {
   cursor: pointer;
@@ -11540,6 +11580,7 @@ box-shadow: 10px 10px 15px $purple;
   max-width: 25rem;
   border-radius: 0.5rem;
   overflow: hidden;
+  
 }
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
